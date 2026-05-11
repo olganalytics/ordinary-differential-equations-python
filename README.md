@@ -2,7 +2,7 @@
 
 Repozytorium przedstawia numeryczne rozwiązywanie równań różniczkowych zwyczajnych (ODE) z wykorzystaniem języka Python oraz bibliotek naukowych.
 
-W pracy zaimplementowano metodę Eulera i porównano rozwiązania numeryczne z rozwiązaniem symbolicznym wyznaczonym przy użyciu biblioteki SymPy. Przeprowadzono również analizę wpływu kroku czasowego na dokładność rozwiązania.
+W projekcie zaimplementowano metodę Eulera i porównano rozwiązania numeryczne z rozwiązaniem symbolicznym wyznaczonym przy użyciu biblioteki SymPy. Przeprowadzono również analizę wpływu kroku czasowego na dokładność rozwiązania.
 
 Dodatkowo przeanalizowano wybrane układy dynamiczne, takie jak model Lotki–Volterry opisujący zależność pomiędzy populacją drapieżników i ofiar oraz układ Lorenza ilustrujący zjawiska chaotyczne.
 
@@ -39,16 +39,27 @@ Podczas realizacji projektu nauczyłam się:
 - analizy wpływu kroku czasowego na dokładność rozwiązania,
 - modelowania wybranych układów dynamicznych,
 - wizualizacji wyników obliczeń z wykorzystaniem biblioteki Matplotlib,
-- pracy z bibliotekami naukowymi w środowisku Python.
+- wykorzystania bibliotek naukowych do analizy numerycznej w Pythonie.
 
-## Wyniki
+## Wizualizacje wyników
 
-W projekcie przygotowano wizualizacje przedstawiające:
+### Porównanie rozwiązania numerycznego i dokładnego
 
-- porównanie rozwiązania numerycznego i symbolicznego,
-- wpływ kroku czasowego na dokładność metody Eulera,
-- dynamikę populacji w modelu Lotki–Volterry,
-- trajektorię układu Lorenza.
+Porównanie rozwiązania uzyskanego metodą Eulera z rozwiązaniem dokładnym równania różniczkowego.
+
+![Porównanie rozwiązania](images/wykres_porownanie.png)
+
+### Analiza dokładności metody Eulera
+
+Wpływ kroku czasowego na maksymalny błąd rozwiązania numerycznego.
+
+![Analiza dokładności](images/wykres_dokladnosc.png)
+
+### Układ Lorenza
+
+Wizualizacja atraktora Lorenza przedstawiającego zachowanie układu chaotycznego.
+
+![Atraktor Lorenza](images/wykres_atraktor.png)
 
 ## Uruchomienie projektu
 
@@ -67,7 +78,7 @@ cd ordinary-differential-equations-python
 3. Zainstaluj wymagane biblioteki:
 
 ```bash
-pip install numpy scipy sympy matplotlib notebook
+pip install numpy scipy sympy matplotlib jupyter
 ```
 
 4. Uruchom Jupyter Notebook:
@@ -76,8 +87,10 @@ pip install numpy scipy sympy matplotlib notebook
 jupyter notebook
 ```
 
-5. Otwórz plik notebooka i uruchom komórki.
+5. Otwórz plik:
 
-## Autor
+```text
+numerical_ode_analysis.ipynb
+```
 
-Projekt został wykonany w ramach rozwijania umiejętności z zakresu metod numerycznych, modelowania matematycznego oraz programowania w języku Python.
+6. Uruchom wszystkie komórki notebooka.
