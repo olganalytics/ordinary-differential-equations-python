@@ -47,50 +47,23 @@ Podczas realizacji projektu nauczyłam się:
 
 Porównanie rozwiązania uzyskanego metodą Eulera z rozwiązaniem dokładnym równania różniczkowego.
 
-![Porównanie rozwiązania](images/wykres_porownanie.png)
+![Porównanie rozwiązania](wykres_porownanie.png)
 
 ### Analiza dokładności metody Eulera
 
 Wpływ kroku czasowego na maksymalny błąd rozwiązania numerycznego.
 
-![Analiza dokładności](images/wykres_dokladnosc.png)
+![Analiza dokładności](wykres_dokladnosc.png)
 
 ### Układ Lorenza
 
 Wizualizacja atraktora Lorenza przedstawiającego zachowanie układu chaotycznego.
 
-![Atraktor Lorenza](images/wykres_atraktor.png)
+![Atraktor Lorenza](wykres_atraktor.png)
 
-## Uruchomienie projektu
+## Wnioski
 
-1. Sklonuj repozytorium:
+Przeprowadzona analiza pokazuje, że metody numeryczne umożliwiają skuteczne przybliżanie rozwiązań równań różniczkowych zwyczajnych. Dokładność rozwiązania zależy od wielkości kroku czasowego — jego zmniejszenie prowadzi do ograniczenia błędu numerycznego.
 
-```bash
-git clone https://github.com/olganalytics/ordinary-differential-equations-python.git
-```
+Analiza modeli Lotki–Volterry i Lorenza pozwoliła zaobserwować zachowanie wybranych układów dynamicznych oraz zilustrować ich zmienność w czasie za pomocą wizualizacji.
 
-2. Przejdź do folderu projektu:
-
-```bash
-cd ordinary-differential-equations-python
-```
-
-3. Zainstaluj wymagane biblioteki:
-
-```bash
-pip install numpy scipy sympy matplotlib jupyter
-```
-
-4. Uruchom Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-5. Otwórz plik:
-
-```text
-numerical_ode_analysis.ipynb
-```
-
-6. Uruchom wszystkie komórki notebooka.
